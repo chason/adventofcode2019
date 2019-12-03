@@ -7,7 +7,7 @@ def process_op(opcode: int, x: int, y: int) -> int:
         return x + y
     if opcode == 2:
         return x * y
-    raise ValueError(f"bad opcode: {cmd}")
+    raise ValueError(f"bad opcode: {opcode}")
 
 def intcode(opcodes: List[int]) -> List[int]:
     newop = opcodes[:]
