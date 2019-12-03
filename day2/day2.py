@@ -17,7 +17,7 @@ def intcode(opcodes: List[int]) -> List[int]:
         pos += 4
     return newop
 
-def run_program(memory, noun, verb):
+def run_program(memory: List[int], noun: int, verb: int) -> int:
     # make a shallow copy so we don't overwrite original list
     memory = memory[:]
     memory[1] = noun
